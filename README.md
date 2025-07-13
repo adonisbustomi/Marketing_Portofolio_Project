@@ -2,19 +2,31 @@
 This SQL code serves as both a learning resource and a personal portfolio to demonstrate my growing skills in data analysis and business intelligence.
 # 📊 Marketing Performance Analytics – SQL + Power BI
 
-The goal of this project is to investigate the performance of marketing campaign at ShopEasy, an online retail business, that facing reduced customer engagement and conversion rates despite launching several new online marketing campaigns. They are reaching out to you to help conduct a detailed analysis and identify areas for improvement in their marketing strategies
+The goal of this project is to investigate the performance of marketing campaign at ShopEasy, an online retail business, that facing reduced customer engagement and conversion rates despite launching several new online marketing campaigns. Also noticed a drop in customer engagement and satisfaction, which is impacting overall conversion rates.
+They are reaching out to you to help conduct a detailed analysis and identify areas for improvement in their marketing strategies
+
+---
+
+## 🔍 Insights Summary
+In order to evaluate campaign performance, we focused on the following KPI's:
+-  Conversion Rate: Percentage of website visitors who make a purchase.
+-  Customer Engagement Rate: Level of interaction with marketing content (clicks, likes, comments).
+-  Average Order Value (AOV): Average amount spent by a customer per transaction.
+-  Customer Feedback Score: Average rating from customer reviews.
+
+
+Decreased Conversion Rates: 
+-  The conversion rate demonstrated a strong rebound in December, reaching 10.2%, despite a notable dip to 5.0% in October.
+Reduced Customer Engagement:
+-  There is a decline in overall social media engagement, with views dropping throughout the year.
+-  While clicks and likes are low compared to views, the click-through rate stands at 15.37%, meaning that engaged users are still interacting effectively.
+Customer Feedback Analysis:
+-  Customer ratings have remained consistent, averaging around 3.7 throughout the year.
+-  Although stable, the average rating is below the target of 4.0, suggesting a need for focused improvements in customer satisfaction, for products below 3,5.
 
 
 ---
 
-## 🔍 Business Questions
-
-- Are we converting views into purchases efficiently?
-- Which content types (Video, Social Media, Blog) drive the highest engagement?
-- What products have the highest/lowest conversion rates?
-- Is marketing effort translating into better customer sentiment?
-
----
 
 ## 🧰 Tools Used
 
@@ -22,48 +34,9 @@ The goal of this project is to investigate the performance of marketing campaign
 - **Power BI:** Dashboard visualization (conversion, rating, engagement)  
 - **Excel (for CSV management)**
 
----
-
-## 📁 Database Schema
-
-Tables used:
-- `customers`, `products`, `customer_reviews`, `customer_journey`, `engagement_data`
-
-📌 *See `marketing.sql` for all cleaning & exploration queries.*
 
 ---
 
-## 🧹 Data Preparation Highlights
-
-- Removed duplicate rows using `ROW_NUMBER() OVER (...)`
-- Standardized `ContentType` values (`'video' → 'Video'`, `'socialmedia' → 'Social Media'`)
-- Split combined column `ViewsClicksCombined` into separate `views` and `clicks`
-- Merged customer data with `geography` into a single `customers2` table
-
----
-
-## 📈 Key Insights
-
-### 1. 📉 Engagement naik, tapi conversion turun
-Despite high visibility (9M+ views), **average conversion rate is only 9.57%**, with a **noticeable drop in Q3**.
-
-### 2. 📱 Content performance
-- **Social Media** and **Video** contribute 80%+ of engagement
-- Blog posts generate steady interest but lower click rates
-
-### 3. 🛍 Product with highest conversion
-- `Hockey Stick` and `Ski Boots` reach **>14% conversion**
-- `Swim Goggles` and `Yoga Mat` perform below average
-
-### 4. ⭐ Customer sentiment
-- Average rating across all products: **3.69**
-- Highest-rated: **Climbing Rope (3.91)**  
-- Lowest-rated: **Golf Clubs (3.48)**
-
-### 5. 🧪 Specific Query Insight
-> Customers who gave low ratings (<3) still made **multiple purchases**, indicating room for **product improvement** despite existing loyalty.
-
----
 
 ## 📊 Dashboard Preview
 
