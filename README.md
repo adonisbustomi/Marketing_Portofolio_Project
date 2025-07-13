@@ -2,7 +2,8 @@
 This SQL code serves as both a learning resource and a personal portfolio to demonstrate my growing skills in data analysis and business intelligence.
 # 📊 Marketing Performance Analytics – SQL + Power BI
 
-This project analyzes customer engagement and conversion across various product campaigns. Using SQL for data wrangling and Power BI for visualization, it identifies key trends in marketing effectiveness.
+The goal of this project is to investigate the performance of marketing campaign at ShopEasy, an online retail business, that facing reduced customer engagement and conversion rates despite launching several new online marketing campaigns. They are reaching out to you to help conduct a detailed analysis and identify areas for improvement in their marketing strategies
+
 
 ---
 
